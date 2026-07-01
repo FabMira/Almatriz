@@ -38,9 +38,11 @@ if ($subject === '') {
     $subject = 'Consulta desde escuela-almatriz.com';
 }
 
-$configPath = __DIR__ . '/php/mail-config.php';
+// La config con credenciales vive FUERA del webroot: /home/<user>/private/mail-config.php
+// (un nivel arriba de public_html). Se puede sobreescribir con la env var MAIL_CONFIG_PATH.
+$configPath = getenv('MAIL_CONFIG_PATH') ?: dirname(__DIR__) . '/private/mail-config.php';
 if (!is_file($configPath)) {
-    error_log('Contacto Almatriz - falta php/mail-config.php en el servidor');
+    error_log('Contacto Almatriz - falta mail-config.php en ' . $configPath);
     respond(500, ['ok' => false, 'error' => 'El formulario no esta configurado aun. Escribenos por WhatsApp.']);
 }
 $config = require $configPath;

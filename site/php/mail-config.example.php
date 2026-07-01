@@ -1,5 +1,11 @@
 <?php
-// Configuracion SMTP para el formulario de contacto.
+// Configuracion SMTP para el formulario de contacto (PLANTILLA).
+//
+// UBICACION EN EL SERVER: copiar este archivo a  /home/esc447/private/mail-config.php
+// (un nivel ARRIBA de public_html, fuera del webroot) y hacer:  chmod 600 mail-config.php
+// send.php lo carga desde ../private/mail-config.php. NO dejar la version con password
+// dentro de public_html.
+//
 // IMPORTANTE: reemplaza SMTP_PASS por un "App Password" de Google
 // (cuenta contactoalmatriz@gmail.com -> Seguridad -> Verificacion en 2 pasos
 //  -> Contrasenas de aplicaciones). NO uses la clave normal de Gmail.

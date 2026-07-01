@@ -5,6 +5,11 @@ AddDefaultCharset UTF-8
 
 # Serve HTML without .html extension
 RewriteEngine On
+
+# Allow Let's Encrypt validation
+RewriteCond %{REQUEST_URI} ^/\.well-known/ [NC]
+RewriteRule ^ - [L]
+
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME}.html -f

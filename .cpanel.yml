@@ -6,8 +6,6 @@ deployment:
     - /bin/mkdir -p $BACKUPPATH
     - /bin/cp -R $DEPLOYPATH* $BACKUPPATH/ 2>/dev/null || true
     - /bin/cp -R $DEPLOYPATH.htaccess $BACKUPPATH/ 2>/dev/null || true
-    - /bin/rm -rf $DEPLOYPATH*
-    - /bin/rm -f $DEPLOYPATH.htaccess
     - /bin/cp -R site/* $DEPLOYPATH
     - /bin/cp site/.htaccess $DEPLOYPATH
     - /bin/chmod 644 $DEPLOYPATH*.html

@@ -45,7 +45,9 @@ Folder-name suffixes are page variants, not throwaway: `_escritorio` = desktop l
 - Contact form uses a `mailto:` action that opens the visitor's email client pre-filled with `contactoalmatriz@gmail.com`; replace with a real backend endpoint if you prefer server-side form handling.
 - WhatsApp link uses `https://wa.me/56956796671`.
 - Training dossiers live in `site/assets/` (`dossier-2027-perinatal.pdf`, `dossier-umbral-26-climaterio.pdf`) and are linked from the perinatal and climaterio training pages for direct download.
-- SEO URLs use the domain `https://almatriz.com`; update `sitemap.xml`, `robots.txt`, `.htaccess`, and OG/JSON-LD URLs if the domain changes.
+- SEO URLs use the domain `https://escuela-almatriz.com`; update `sitemap.xml`, `robots.txt`, `.htaccess`, and OG/JSON-LD URLs if the domain changes.
+
+Tailwind runs as a local build (no CDN). The theme lives in `tailwind.config.js`; CSS is compiled from `src/input.css` to `site/assets/tailwind.css`, which the HTML pages load via `<link rel="stylesheet" href="/assets/tailwind.css">`. IMPORTANT: Tailwind purges unused classes, so after editing any HTML class names you must rebuild before deploying — run `pnpm install` (once) then `pnpm run build:css` (or `pnpm run watch:css` while developing). The compiled `site/assets/tailwind.css` is committed to the repo because the cPanel Git deploy only copies files and does not run a build step.
 
 When updating the live site, edit the files in `site/`; treat `stitch_escuela_almatriz/` as read-only source/reference.
 

@@ -44,7 +44,7 @@ cPanel generalmente configura estos permisos automáticamente al extraer.
 
 ### Paso 4: Probar el sitio
 
-1. Visita `https://almatriz.com`
+1. Visita `https://escuela-almatriz.com`
 2. Verifica que todas las páginas carguen correctamente
 3. Prueba los formularios de contacto
 4. Verifica que las imágenes se muestren
@@ -97,7 +97,7 @@ Haz clic en **Deploy HEAD Commit** o configura un webhook para despliegue autom�
 Si el SSL no está instalado, el sitio no cargará por HTTPS. Para verificar:
 
 ```bash
-curl -I https://almatriz.com
+curl -I https://escuela-almatriz.com
 ```
 
 Si retorna `HTTP/2 200` o `HTTP/1.1 200`, el SSL está funcionando.
@@ -112,8 +112,8 @@ El archivo `.htaccess` ya incluye:
 
 ### Verificar SEO
 
-1. Envía el sitemap a Google Search Console: `https://almatriz.com/sitemap.xml`
-2. Verifica que `robots.txt` sea accesible: `https://almatriz.com/robots.txt`
+1. Envía el sitemap a Google Search Console: `https://escuela-almatriz.com/sitemap.xml`
+2. Verifica que `robots.txt` sea accesible: `https://escuela-almatriz.com/robots.txt`
 3. Prueba las URLs en [Google Rich Results Test](https://search.google.com/test/rich-results)
 
 ## 🔧 Solución de Problemas

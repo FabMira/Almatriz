@@ -1,0 +1,15 @@
+{
+  "name": "almatriz-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sitio estatico Almatriz (escuela-almatriz.com) con Tailwind build local",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./site/assets/tailwind.css --minify",
+    "watch:css": "tailwindcss -i ./src/input.css -o ./site/assets/tailwind.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@tailwindcss/forms": "^0.5.10",
+    "tailwindcss": "^3.4.17"
+  }
+}

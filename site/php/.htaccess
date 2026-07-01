@@ -1,0 +1,2 @@
+# Bloquear acceso web directo a la config y libreria; solo send.php los usa via include.
+Require all denied

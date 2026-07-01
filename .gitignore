@@ -29,3 +29,6 @@ WhatsApp Unknown*/
 
 # Node / Tailwind build
 node_modules/
+
+# Credenciales SMTP reales (crear en el server, no versionar)
+site/php/mail-config.php

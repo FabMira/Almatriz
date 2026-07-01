@@ -132,6 +132,20 @@
         }
       }
     }
+  
+    // Mobile menu toggle
+    const menuBtn = document.querySelector('[aria-label="Abrir menú"], [aria-label="Cerrar menú"]');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        const isOpen = !mobileMenu.classList.contains('hidden');
+        menuBtn.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+        const icon = menuBtn.querySelector('.material-symbols-outlined');
+        if (icon) icon.textContent = isOpen ? 'close' : 'menu';
+      });
+    }
+
   </script>
   <style>
     .material-symbols-outlined {
@@ -164,10 +178,10 @@
 <body class="font-body-md text-body-md overflow-x-hidden">
 
   <!-- Shared Navigation: Formación → Doula de Menopausia active -->
-  <header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 shadow-sm transition-all duration-300">
+  <header class="sticky top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 shadow-sm transition-all duration-300">
     <nav class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
       <a href="index.html" class="flex items-center">
-        <img src="images/almatriz-logo-2.png" alt="Almatriz Logo" class="h-10 w-auto object-contain" width="512" height="288">
+        <img src="images/almatriz-logo-2.png" alt="Almatriz Logo" class="h-10 md:h-12 w-auto object-contain" width="512" height="288">
       </a>
       <div class="hidden md:flex items-center gap-8 font-label-md text-label-md">
         <a href="index.html" class="text-on-surface-variant hover:text-terracotta-base transition-colors">Inicio</a>
@@ -202,7 +216,23 @@
         </button>
       </div>
     </nav>
-  </header>
+  
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-surface border-t border-outline-variant/30 shadow-lg">
+      <div class="px-margin-mobile py-4 space-y-1 max-w-container-max mx-auto">
+        <a href="index.html" class="block py-3 px-3 rounded-lg text-on-surface-variant hover:text-terracotta-base hover:bg-warm-cream/30 transition-colors font-label-md text-label-md">Inicio</a>
+        <div class="px-3 py-2">
+          <p class="font-label-md text-label-md text-terracotta-deep font-bold mb-2">Formación</p>
+          <a href="formacion-doulas-perinatal.html" class="block pl-4 py-2 text-sm text-on-surface-variant hover:text-terracotta-base transition-colors">Doula Perinatal</a>
+          <a href="formacion-doula-menopausia.html" class="block pl-4 py-2 text-sm text-on-surface-variant hover:text-terracotta-base transition-colors">Doula de Menopausia</a>
+        </div>
+        <a href="cursos-especializacion.html" class="block py-3 px-3 rounded-lg text-on-surface-variant hover:text-terracotta-base hover:bg-warm-cream/30 transition-colors font-label-md text-label-md">Cursos de especialización</a>
+        <a href="sobre-nosotras.html" class="block py-3 px-3 rounded-lg text-on-surface-variant hover:text-terracotta-base hover:bg-warm-cream/30 transition-colors font-label-md text-label-md">Sobre nosotras</a>
+        <a href="contacto.html" class="block py-3 px-3 rounded-lg text-on-surface-variant hover:text-terracotta-base hover:bg-warm-cream/30 transition-colors font-label-md text-label-md">Contacto</a>
+        <a href="https://wa.me/56956796671?text=hola%2C%20quiero%20inscribirme%20en%20la%20escuela" target="_blank" rel="noopener" class="block mt-2 text-center bg-terracotta-base text-white px-6 py-3 rounded-lg font-label-md text-label-md hover:bg-terracotta-deep transition-all">Inscribirse</a>
+      </div>
+    </div>
+</header>
 
   <main>
 <!-- Section 1: Hero -->
@@ -486,7 +516,7 @@
     <div class="grid grid-cols-1 md:grid-cols-12 gap-12 w-full max-w-container-max mx-auto">
       <div class="md:col-span-4">
         <a href="index.html" class="inline-block mb-6">
-          <img src="images/almatriz-logo-2.png" alt="Almatriz Logo" class="h-10 w-auto object-contain" width="512" height="288">
+          <img src="images/almatriz-logo-2.png" alt="Almatriz Logo" class="h-10 md:h-12 w-auto object-contain" width="512" height="288">
         </a>
         <p class="text-sm text-on-surface-variant leading-relaxed mb-6">
           Sabiduría de mujeres para mujeres. 10 años humanizando procesos vitales con una mirada feminista y de derechos humanos.

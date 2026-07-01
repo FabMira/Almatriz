@@ -2,10 +2,16 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/esc447/public_html/
+    - export BACKUPPATH=/home/esc447/public_html_backup_$(date +%Y%m%d_%H%M%S)
+    - /bin/mkdir -p $BACKUPPATH
+    - /bin/cp -R $DEPLOYPATH* $BACKUPPATH/ 2>/dev/null || true
+    - /bin/cp -R $DEPLOYPATH.htaccess $BACKUPPATH/ 2>/dev/null || true
+    - /bin/rm -rf $DEPLOYPATH*
+    - /bin/rm -f $DEPLOYPATH.htaccess
     - /bin/cp -R site/* $DEPLOYPATH
     - /bin/cp site/.htaccess $DEPLOYPATH
-    - /bin/chmod 644 $DEPLOYPATH/*.html
-    - /bin/chmod 644 $DEPLOYPATH/.htaccess
+    - /bin/chmod 644 $DEPLOYPATH*.html
+    - /bin/chmod 644 $DEPLOYPATH.htaccess
     - /bin/chmod 755 $DEPLOYPATH/images
     - /bin/chmod 755 $DEPLOYPATH/assets
     - /bin/chmod 644 $DEPLOYPATH/images/*

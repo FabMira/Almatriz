@@ -44,6 +44,7 @@ Folder-name suffixes are page variants, not throwaway: `_escritorio` = desktop l
 - Team portraits that returned HTTP 403 from Stitch are replaced with `images/placeholder-person.svg`; update these when official assets are available. A new `Tania.jpeg` has already been wired into `sobre-nosotras.html`.
 - Contact form uses a `mailto:` action that opens the visitor's email client pre-filled with `contactoalmatriz@gmail.com`; replace with a real backend endpoint if you prefer server-side form handling.
 - WhatsApp link uses `https://wa.me/56956796671`.
+- Training dossiers live in `site/assets/` (`dossier-2027-perinatal.pdf`, `dossier-umbral-26-climaterio.pdf`) and are linked from the perinatal and climaterio training pages for direct download.
 - SEO URLs use the domain `https://almatriz.com`; update `sitemap.xml`, `robots.txt`, `.htaccess`, and OG/JSON-LD URLs if the domain changes.
 
 When updating the live site, edit the files in `site/`; treat `stitch_escuela_almatriz/` as read-only source/reference.

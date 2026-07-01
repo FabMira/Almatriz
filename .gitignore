@@ -13,12 +13,11 @@ Thumbs.db
 *.swo
 *~
 *.zip
-"WhatsApp Unknown 2026-07-01 at 3.38.27 PM"/"
 
 # Temporary media uploads
-"WhatsApp Unknown 2026-07-01 at 3.38.27 PM"/
 *.zip
 
 # Temporary WhatsApp uploads
-"WhatsApp Unknown 2026-07-01 at 3.38.27 PM"/
-"WhatsApp Unknown 2026-07-01 at 3.39.16 PM"/
+
+# Temporary WhatsApp uploads
+WhatsApp Unknown*/

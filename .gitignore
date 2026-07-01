@@ -12,6 +12,11 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+# Deployment packages
+almatriz_deploy_*.zip
+almatriz_deploy_*.tar.gz
+deploy/
 *.zip
 
 # Temporary media uploads

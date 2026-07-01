@@ -1,0 +1,339 @@
+<!DOCTYPE html><html class="light" lang="es" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Cursos de Especialización | Almatriz</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-container": "#ffebe9",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#e9e2d1",
+                    "primary-container": "#955e5a",
+                    "tertiary-fixed": "#ffdad6",
+                    "secondary-fixed": "#ffdad6",
+                    "inverse-on-surface": "#f7f0df",
+                    "warm-cream": "#EDE6D5",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed-dim": "#eebab5",
+                    "surface-container": "#f4eddc",
+                    "on-error-container": "#93000a",
+                    "terracotta-deep": "#6F4A46",
+                    "on-background": "#1e1c11",
+                    "terracotta-base": "#955E5A",
+                    "on-secondary-fixed-variant": "#613e3a",
+                    "inverse-primary": "#fab6b0",
+                    "on-tertiary-fixed": "#2f1311",
+                    "primary": "#794643",
+                    "secondary": "#7b5550",
+                    "surface-dim": "#e0dac9",
+                    "surface-container-high": "#efe8d7",
+                    "on-primary-fixed-variant": "#693936",
+                    "on-primary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "background": "#fff9ed",
+                    "surface-container-low": "#faf3e2",
+                    "primary-fixed-dim": "#fab6b0",
+                    "surface-tint": "#85504c",
+                    "outline": "#847372",
+                    "tertiary-container": "#8c625e",
+                    "inverse-surface": "#333025",
+                    "error-container": "#ffdad6",
+                    "rose-dust": "#D4A39E",
+                    "on-surface-variant": "#524342",
+                    "on-primary-fixed": "#350f0e",
+                    "secondary-fixed-dim": "#ecbbb5",
+                    "surface": "#fff9ed",
+                    "on-secondary-container": "#7a544f",
+                    "on-primary-container": "#ffebe9",
+                    "surface-variant": "#e9e2d1",
+                    "primary-fixed": "#ffdad7",
+                    "secondary-container": "#fecbc5",
+                    "surface-bright": "#fff9ed",
+                    "outline-variant": "#d6c2c0",
+                    "on-tertiary-fixed-variant": "#623d3a",
+                    "on-surface": "#1e1c11",
+                    "tertiary": "#714a47",
+                    "on-tertiary": "#ffffff",
+                    "surface-alt": "#F5F5F5",
+                    "on-secondary-fixed": "#2f1411"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "container-max": "1280px",
+                    "margin-mobile": "16px",
+                    "margin-desktop": "64px",
+                    "base": "8px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["Libre Caslon Text"],
+                    "display-lg-mobile": ["Libre Caslon Text"],
+                    "body-lg": ["DM Sans"],
+                    "label-sm": ["DM Sans"],
+                    "headline-md": ["Libre Caslon Text"],
+                    "body-md": ["DM Sans"],
+                    "label-md": ["DM Sans"],
+                    "display-lg": ["Libre Caslon Text"]
+            },
+            "fontSize": {
+                    "headline-sm": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.04em", "fontWeight": "700"}],
+                    "headline-md": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .course-card-blur {
+            backdrop-filter: blur(12px);
+            background: rgba(255, 255, 255, 0.6);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-rose-dust selection:text-white overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="sticky top-0 w-full bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md shadow-sm z-50">
+<nav class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="font-headline-sm text-headline-sm text-terracotta-deep dark:text-primary-fixed"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkvIjqNa_r7dFBwy7ZvXPfYVQ7mGG4_SiHmVXmY8pHd4kqIMVJnsiQNqdOx261tosNJ11IFYmwIWUipfPjF5gYG6mATla_0IYCRupxnDZ73h64MF4NSfQCCG75aZF68XZMISzzoCiRwMmSkZ_OPbexEHxC3l4yjf-Vgxc1pmR36lb0jTYQvMnC4GmvCQByyWp6Mfqu1r_K736jolJLVAtpxf33FnY5d6OsQbZHTx7IZtNHOSzWgBWHOq8jvgEGspayEuOwbzTHJ0o" alt="Almatriz Logo" class="h-8 md:h-10 w-auto object-contain"></div>
+<div class="hidden md:flex items-center gap-8 font-body-md text-body-md">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-terracotta-base transition-colors duration-200" href="#">Inicio</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-terracotta-base transition-colors duration-200" href="#">Formación</a>
+<a class="text-terracotta-base font-bold border-b-2 border-terracotta-base pb-1" href="#">Cursos de especialización</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-terracotta-base transition-colors duration-200" href="#">Sobre nosotras</a>
+</div>
+<button class="bg-terracotta-base text-white px-6 py-2 rounded-lg font-label-md transition-all active:scale-95 hover:bg-terracotta-deep shadow-sm">Contacto</button>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative py-24 md:py-32 overflow-hidden md:py-48"><div class="absolute inset-0 z-0">
+  <img alt="Professional group of women in a learning environment" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqP1UNab0Y1slZ5ocJY1Ko15wJYHjYBpDpPunfr6nhBPq2Wv8DhKn6AvcavjTRb_8pu50YPTcHAej6hTiZqp7b92ccTlbKtIm-pzGQXjwSpcYE6Xxmggwzam14pqLFM5dZo71Lla7xSOAc8o6xy_gj-q5zmkSd0S_qTulY2gg0A_nwLWa10dHqOZZtwfQ6n38-W90ojZLXSbptChHaQu6UFPO4_xosGmLb9haU6s-1wup-GeBS4OmePL4wKAhkG_VOrec3JigNmhv9Ug">
+  <div class="absolute inset-0 bg-terracotta-deep/40 backdrop-blur-[2px]"></div>
+</div>
+<div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+  <div class="max-w-3xl bg-white/70 backdrop-blur-md p-8 md:p-16 rounded-[40px] shadow-xl">
+    <span class="font-label-sm text-label-sm text-terracotta-base uppercase tracking-widest mb-4 block">Formación Continua</span>
+    <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-terracotta-deep mb-6 leading-tight">
+      Cursos de Especialización
+    </h1>
+    <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+      En Almatriz entendemos que el aprendizaje no termina con una certificación. Acompañar a las mujeres y sus familias requiere una formación viva, en constante actualización y abierta a nuevas comprensiones.
+    </p>
+  </div>
+</div></section>
+<!-- Course Bento Grid -->
+<section class="py-24 bg-surface-container-low">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="mb-16 text-center max-w-3xl mx-auto">
+<h2 class="font-headline-md text-headline-md text-terracotta-deep mb-4">Nuestra Propuesta Académica</h2>
+<p class="font-body-md text-body-md text-on-surface"><span style="caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-size: 18px; text-align: start; background-color: rgb(255, 249, 237);" class="">Nuestros cursos de formación continua abordan temáticas específicas y de alta relevancia para el acompañamiento perinatal y la salud femenina, integrando evidencia científica, reflexión crítica y herramientas prácticas para fortalecer el ejercicio profesional.</span><br></p>
+</div>
+<div class="grid md:grid-cols-6 gap-gutter">
+<!-- Course 1: Dolor -->
+<div class="md:col-span-4 bg-white rounded-[24px] overflow-hidden shadow-sm hover:shadow-md transition-shadow group transition-all duration-700 opacity-100 translate-y-0">
+<div class="grid md:grid-cols-2 h-full">
+<div class="relative h-64 md:h-full overflow-hidden">
+<img alt="Support during birth" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A close-up shot of two hands holding tightly in a supportive gesture, set against a soft, out-of-focus background of a warm birthing room. The image conveys strength, compassion, and professional accompaniment. The color palette features warm terracotta and cream tones with natural sunlight filtering through, creating an atmosphere of safety and trust." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDct4NVF2msSq0b65besI4_MbV1gG28JAfvfhF93An08zM_cXsGujvwM05npM3wQLjKYYEWMCa9pK3s4OJiv44NwX09KWIgMma3GLELfS0pL2qTELByI7Selqm6xfeJRH1USJVH3dWy7XHjfrCo336c_YDr1MaKwYSsr0HzrzAxyOjZozqAc8zH8V6PA6ePxHU6T-p4uvSxB-VpLNZzX6mtmI5OFhwsAdG0JwBg7tf_v8IvUsno81dwRxzzDwDSQZmvVopJx6uB1kcELA">
+</div>
+<div class="p-8 md:p-12 flex flex-col justify-center">
+<span class="bg-surface-container text-terracotta-base px-3 py-1 rounded-full text-label-sm font-label-sm w-fit mb-4">Módulo de Parto</span>
+<h3 class="font-headline-sm text-headline-sm text-terracotta-deep mb-4">Herramientas no farmacológicas de alivio del dolor</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Enfoque integral en medidas de confort, movimiento libre y soporte fisiológico para el parto..</p>
+
+</div>
+</div>
+</div>
+<!-- Course 2: Posparto -->
+<div class="md:col-span-2 bg-white rounded-[24px] overflow-hidden shadow-sm hover:shadow-md transition-shadow group flex flex-col transition-all duration-700 opacity-100 translate-y-0">
+<div class="h-48 overflow-hidden">
+<img alt="Mother and newborn" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A serene image of a mother holding her newborn baby in a tender embrace. They are wrapped in soft, organic cotton fabrics. The scene is illuminated by gentle morning light, creating a peaceful and intimate mood. The colors are muted creams and soft pinks, reflecting the delicate nature of the fourth trimester and the emotional recovery of the mother." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMDR6MUlcp5P3lgByGmsEUyVEhnAv5kYJG0XDnDMX9jMsnYePNlJe2DfXW2HhLgJnlNMNn5bRPQeGaYWvD9YvsY3W9ilqsNxHYaPikTN4VBJiE-B1qgPrGGZCX3rcdqlxKhV_S1U5DTDM2BE6uC9VZkBZPitgRhzJWJwig-VXbOA4giM-iZElXlVbegZ9ys9rVqvMoGV8muyQCujF9Zk2FDsXS-JQlIqI9rJnSKN58gVBUHmYE1LWCJCBQIgfDC9uI9t_uUM-bSDpG-A">
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline-sm text-headline-sm text-terracotta-deep mb-3">Posparto</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Inmersión profunda en este periodo vital. Soporte emocional y recuperación de la diada.</p>
+
+</div>
+</div>
+<!-- Course 3: Ritos -->
+<div class="md:col-span-2 bg-white rounded-[24px] overflow-hidden shadow-sm hover:shadow-md transition-shadow group flex flex-col transition-all duration-700 opacity-100 translate-y-0">
+<div class="h-48 overflow-hidden">
+<img alt="Ceremonial items" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A collection of traditional ceremonial items like dried lavender, a clay bowl, and woven textiles arranged on a rustic wooden surface. The lighting is low and warm, casting soft shadows that evoke a sense of ritual and sacredness. The aesthetic is organic and grounded, honoring traditional wisdom and life transitions with deep respect." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbTtqFjI4TN5vtGeuTSGyTGXANKm_vIoiNBoZbq3GfLuAb-s7P6EHt_8W_GTnsnZw4PdxBlv4odjzIldMp2Obnd2J-e4NZXJEsjRDnrJMvRRiRDNeaCndTuIquZY55xympwtxHRRkfSAWjnVKTfeGVCpGtBN62Re4eDi6xx6WUOoSOXHFuD34azZzIUa4VKvvsvS2OhXVQMB-K_Y5X6ohn5zZTIHMOx4FWotP3h1FkDnr79Fxww5zaggPa6Mji2t_2tkiMHPTBTaqdKg">
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline-sm text-headline-sm text-terracotta-deep mb-3">Ritos</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Ceremonias tradicionales y rituales para honrar las transiciones vitales de la mujer.</p>
+
+</div>
+</div>
+<!-- Course 4: Aborto -->
+<div class="md:col-span-2 bg-white rounded-[24px] overflow-hidden shadow-sm hover:shadow-md transition-shadow group flex flex-col transition-all duration-700 opacity-100 translate-y-0">
+<div class="h-48 overflow-hidden bg-surface-container">
+<!-- Visual representation of empathy/silence -->
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-gRWrGUtcL9G6gAwVsife6EZHndomb3zzm_HxPWT-dyPPA-Nrb3TXN5VjVDjTr2qY-m9LvCCEUg3M5F255IHw_srW1GViGbWNEeNl74kidRSPNh2hguVpfvG1oxJ4u2ge3L0Yp06SjVQLv9xlekIWBXEFUVQmeoUa1EXVYnHrhVzMg3ojYznww-pWMU2PkaZPSdUk9ZBBhibRuGFC_WyY6sNKrr3XIjtHsx7ZqC3b5ZqMm4VKZcGDjOMuXIvCKeDqjncg0T-WwN3Trg" alt="Acompañamiento compasivo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A serene and respectful image representing emotional support and compassion during difficult transitions.">
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline-sm text-headline-sm text-terracotta-deep mb-3">Aborto</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow"><span style="caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-size: medium;" class="">Entrega herramientas para ofrecer un acompañamiento respetuoso, ético y libre de juicios en sus distintas realidades.</span><br></p>
+
+</div>
+</div>
+<!-- Course 5: Cesáreas -->
+<div class="md:col-span-2 bg-white rounded-[24px] overflow-hidden shadow-sm hover:shadow-md transition-shadow group flex flex-col transition-all duration-700 opacity-100 translate-y-0">
+<div class="h-48 overflow-hidden">
+<img alt="Medical environment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A bright, professional yet warm medical consultation room. The focus is on a supportive interaction between a healthcare provider and a family. The lighting is clean and clinical but softened by warm wooden accents and natural light. It reflects the intersection of professional medical care and family-centered birthing experiences." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCLnusXSY8V4eY8xEXW8s2p3ZJiNUDz0kGGY7drCsyzcWhk2BgP9dDAUtTL25liXpGjgtt3iWUaXTQQT0PnzLBVDDizHHuQClYtzSP3zKr2wHEvzeHUjeREDwn5jL2GkgqIUWaKo_EiSAGHLPiGFRfe3zXcPn81vy9eDD3V735O4zj3cPEKfEtwpGeicTpRqHRVILuToe2_sXBxPfh9S_3LffQVrHsNtbo5hwX6_TB_JNc8oQakdWysJ9tXf1e5CM1xYtXaGtuXDtbTQ">
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline-sm text-headline-sm text-terracotta-deep mb-3">Cesáreas</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Estrategias de apoyo para partos quirúrgicos (Cesáreas) centradas en el respeto y la empatia.</p>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Empowerment Callout -->
+<section class="py-24 overflow-hidden">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="relative rounded-[40px] bg-terracotta-deep text-white p-12 md:p-24 overflow-hidden">
+<!-- Subtle background decoration -->
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10">
+<span class="material-symbols-outlined text-[400px] absolute -top-20 -right-20">favorite</span>
+</div>
+<div class="relative z-10 max-w-2xl">
+<h2 class="font-headline-md text-headline-md mb-6 leading-tight">¿Lista para profundizar en tu camino de acompañamiento?</h2>
+<p class="font-body-lg text-body-lg mb-10 opacity-90">
+                            Nuestros cursos están diseñados para ser cursados de forma independiente o como parte de un trayecto integral de especialización.
+                        </p>
+<div class="flex flex-col sm:flex-row gap-4"><button class="bg-warm-cream text-terracotta-deep px-8 py-4 rounded-lg font-bold font-label-md hover:bg-white transition-colors">Quiero especializarme</button>
+
+
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low py-12 md:py-24">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
+<div class="md:col-span-4">
+<div class="mb-6">
+<img alt="Almatriz Logo" class="h-8 md:h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkvIjqNa_r7dFBwy7ZvXPfYVQ7mGG4_SiHmVXmY8pHd4kqIMVJnsiQNqdOx261tosNJ11IFYmwIWUipfPjF5gYG6mATla_0IYCRupxnDZ73h64MF4NSfQCCG75aZF68XZMISzzoCiRwMmSkZ_OPbexEHxC3l4yjf-Vgxc1pmR36lb0jTYQvMnC4GmvCQByyWp6Mfqu1r_K736jolJLVAtpxf33FnY5d6OsQbZHTx7IZtNHOSzWgBWHOq8jvgEGspayEuOwbzTHJ0o">
+</div>
+<p class="font-body-md text-on-surface-variant mb-8">
+                            Acompañando el nacer con consciencia, profesionalismo y amor. Formación y servicios para el mundo perinatal.
+                        </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-terracotta-base hover:bg-terracotta-base hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-terracotta-base hover:bg-terracotta-base hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">mail</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-2 md:col-start-6">
+<h4 class="font-label-sm text-label-sm uppercase tracking-widest text-terracotta-deep mb-6">Navegación</h4>
+<ul class="flex flex-col gap-4 font-body-md text-on-surface-variant">
+<li class=""><a class="hover:text-terracotta-base transition-colors" href="#">Inicio</a></li>
+<li class=""><a class="hover:text-terracotta-base transition-colors" href="#">Formación</a>&nbsp;Perinatal</li>
+<li class="">Formación Climaterio</li>
+<li class=""><a class="hover:text-terracotta-base transition-colors" href="#">Sobre nosotras</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-sm text-label-sm uppercase tracking-widest text-terracotta-deep mb-6">Legal</h4>
+<ul class="flex flex-col gap-4 font-body-md text-on-surface-variant">
+<li class=""><a class="hover:text-terracotta-base transition-colors" href="#">Privacidad</a></li>
+<li class=""><a class="hover:text-terracotta-base transition-colors" href="#">Términos</a></li>
+<li class=""><a class="hover:text-terracotta-base transition-colors" href="#">Cookies</a></li>
+</ul>
+</div>
+<div class="md:col-span-3">
+<h4 class="font-label-sm text-label-sm uppercase tracking-widest text-terracotta-deep mb-6">Contacto</h4>
+<ul class="flex flex-col gap-4 font-body-md text-on-surface-variant">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-label-md">mail</span>
+                                contactoalmatriz@gmail.com
+                            </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-label-md">location_on</span>
+                                Santiago, Chile
+                            </li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-label-sm text-on-surface-variant">
+                        © 2024 Almatriz. Todos los derechos reservados.
+                    </p>
+<p class="font-label-sm text-on-surface-variant flex items-center gap-1">
+                        Hecho con <span class="material-symbols-outlined text-error text-sm">favorite</span> para la comunidad perinatal.
+                    </p>
+</div>
+</div>
+</footer>
+<script>
+        // Subtle reveal animation on scroll
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.group').forEach(el => {
+                el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+                observer.observe(el);
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

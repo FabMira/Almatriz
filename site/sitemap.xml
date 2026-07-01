@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://almatriz.com/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://almatriz.com/formacion-doulas-perinatal.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://almatriz.com/formacion-doula-menopausia.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://almatriz.com/cursos-especializacion.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://almatriz.com/sobre-nosotras.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://almatriz.com/contacto.html</loc>
+    <priority>0.7</priority>
+  </url>
+</urlset>

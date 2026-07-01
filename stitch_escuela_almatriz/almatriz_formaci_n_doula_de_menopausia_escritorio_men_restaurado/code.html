@@ -1,0 +1,509 @@
+<!DOCTYPE html><html class="light" lang="es" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Formación Doula de Menopausia | Almatriz</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "terracotta-base": "#955E5A",
+                        "surface-container-highest": "#e9e2d1",
+                        "on-secondary-fixed": "#2f1411",
+                        "outline": "#847372",
+                        "background": "#fff9ed",
+                        "tertiary-fixed": "#ffdad6",
+                        "surface-dim": "#e0dac9",
+                        "on-surface": "#1e1c11",
+                        "tertiary-fixed-dim": "#eebab5",
+                        "on-secondary-container": "#7a544f",
+                        "surface-variant": "#e9e2d1",
+                        "on-tertiary": "#ffffff",
+                        "surface-alt": "#F5F5F5",
+                        "primary-container": "#955e5a",
+                        "on-surface-variant": "#524342",
+                        "tertiary": "#714a47",
+                        "primary-fixed": "#ffdad7",
+                        "on-primary-container": "#ffebe9",
+                        "secondary": "#7b5550",
+                        "surface-container-high": "#efe8d7",
+                        "surface-container-low": "#faf3e2",
+                        "secondary-container": "#fecbc5",
+                        "warm-cream": "#EDE6D5",
+                        "on-error-container": "#93000a",
+                        "surface-container": "#f4eddc",
+                        "inverse-on-surface": "#f7f0df",
+                        "tertiary-container": "#8c625e",
+                        "surface-container-lowest": "#ffffff",
+                        "rose-dust": "#D4A39E",
+                        "surface-tint": "#85504c",
+                        "primary-fixed-dim": "#fab6b0",
+                        "outline-variant": "#d6c2c0",
+                        "inverse-primary": "#fab6b0",
+                        "secondary-fixed-dim": "#ecbbb5",
+                        "inverse-surface": "#333025",
+                        "secondary-fixed": "#ffdad6",
+                        "on-primary-fixed-variant": "#693936",
+                        "on-tertiary-fixed": "#2f1311",
+                        "surface-bright": "#fff9ed",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#613e3a",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-background": "#1e1c11",
+                        "on-tertiary-fixed-variant": "#623d3a",
+                        "error": "#ba1a1a",
+                        "surface": "#fff9ed",
+                        "on-primary-fixed": "#350f0e",
+                        "terracotta-deep": "#6F4A46",
+                        "primary": "#794643",
+                        "on-tertiary-container": "#ffebe9",
+                        "on-secondary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "base": "8px",
+                        "gutter": "24px",
+                        "container-max": "1280px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Libre Caslon Text"],
+                        "display-lg-mobile": ["Libre Caslon Text"],
+                        "body-lg": ["DM Sans"],
+                        "label-sm": ["DM Sans"],
+                        "label-md": ["DM Sans"],
+                        "body-md": ["DM Sans"],
+                        "display-lg": ["Libre Caslon Text"],
+                        "headline-sm": ["Libre Caslon Text"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.04em", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #faf3e2; /* surface-container-low */
+            color: #1e1c11; /* on-surface */
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .organic-list li::before {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: #955E5A;
+            border-radius: 50%;
+            margin-right: 12px;
+            margin-bottom: 2px;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="bg-background/80 dark:bg-on-background/80 backdrop-blur-md docked full-width top-0 sticky z-50 border-b border-outline-variant/30 shadow-sm transition-all duration-300"><div class="flex items-center justify-between w-full px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="flex items-center gap-12">
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8ZMMLZAkxDocPcZuQyfBQXbcew_3eAPc2JCPWBdBSVFjafRjmJS3cQl0qiP_pWq8b_3J4_SxOnezTPrz6ECCSA8r1La7529DjRawMLYaR86402VLqbhRTTR1yPiBoeHvncs6wXSGtuneHGwzmJ-2I5xGr6qXNd89cUipMU_7B8bAJR-fRqroCVKNFqz53px5OmeX0SA1Vol3gHT9FXVgdIp1tl6w3bh95lMPVYlyg0kOAXBSvDnbmhyIyerWLjvMUqJJLy2YR9E4" alt="Almatriz Logo" class="h-8 w-auto object-contain">
+<div class="hidden md:flex items-center gap-8"><a class="text-on-surface-variant hover:text-terracotta-deep transition-colors font-label-md text-label-md" href="/">Inicio</a>
+<div class="relative group">
+<button class="flex items-center gap-1 text-terracotta-deep font-bold font-label-md text-label-md hover:text-terracotta-base transition-colors">
+          Formación
+          <span class="material-symbols-outlined text-[20px]">expand_more</span>
+</button>
+<div class="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border border-outline-variant/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+<div class="p-2">
+<a class="block p-4 rounded-lg hover:bg-warm-cream/30 transition-colors" href="#">
+<p class="font-bold text-terracotta-deep text-label-md">Doula Perinatal</p>
+<p class="text-on-surface-variant text-label-sm mt-1">Acompañamiento en la gestación y parto</p>
+</a>
+<a class="block p-4 rounded-lg hover:bg-warm-cream/30 transition-colors" href="#">
+<p class="font-bold text-terracotta-deep text-label-md">Doula de Menopausia</p>
+<p class="text-on-surface-variant text-label-sm mt-1">Soberanía y sabiduría en el climaterio</p>
+</a>
+</div>
+</div>
+</div>
+
+<a class="text-on-surface-variant hover:text-terracotta-deep transition-colors font-label-md text-label-md" href="#">Cursos de especializacion</a>
+<a class="text-on-surface-variant hover:text-terracotta-deep transition-colors font-label-md text-label-md" href="#">Sobre nosotras</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden md:flex items-center gap-4 text-terracotta-deep">
+
+
+</div>
+<button class="bg-terracotta-base text-white px-6 py-2.5 rounded-lg font-label-md text-label-md hover:bg-terracotta-deep transition-all shadow-md active:scale-95">
+      Inscribirse
+    </button>
+</div>
+</div></nav>
+<main>
+<!-- Section 1: Hero -->
+<section class="relative min-h-[85vh] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Sunlight through blooming cherry blossoms" class="w-full h-full object-cover" data-alt="A wide shot of delicate white spring blossoms on a branch, back-lit by a warm, golden sunset. The light creates a soft, hazy atmosphere with ethereal lens flares and deep shadows, emphasizing the natural beauty and cyclical nature of life. The color palette is dominated by warm golds, creamy whites, and earthy browns, aligning with a professional perinatal care brand aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5SVcbFpVD_hRmErCXh-QuEVtGAATmNJjbn3oHeyfwn02x4eNyUzS2L4aUf5f5MS7iGghqR7m83_OSynBPewR20g81VJInKAOHbImRrTmtdCPS69vI3f44WEGKfSmUG4LdMrHskx_34C0CZyHWgGUBBT6R_3P5pDimWnF6y6keDNzRMcG3R3rP2XEk6-uuUrShgNzQ4npafHEU9RIBpWJ_NU7a1HQlOvzq93SSAbQd0rqAhb5qeBl--iKDeYtXpiK130VrMyY4UsdzTg">
+<div class="absolute inset-0 bg-black/20"></div>
+</div>
+<div class="relative z-10 w-full max-w-container-max mx-auto px-margin-desktop">
+<div class="max-w-2xl bg-white/70 backdrop-blur-md p-10 md:p-16 rounded-xl shadow-2xl">
+<h1 class="text-display-lg font-display-lg text-terracotta-deep mb-6">Formación de Doula de Climaterio</h1>
+<p class="text-body-lg font-body-lg text-terracotta-deep mb-8 leading-relaxed">En Almatriz creemos que esta transición merece ser acompañada con información, respeto, comunidad y cuidado. Por eso creamos Umbral: &nbsp;una nueva formación y espacio de aprendizaje y crecimiento para quienes desean acompañar a otras mujeres en este importante proceso vital.</p>
+<button class="bg-terracotta-base text-white px-8 py-4 rounded-lg font-label-md text-label-md hover:bg-terracotta-deep transition-all transform active:scale-95 shadow-lg">
+                        Explorar el Programa
+                    </button>
+</div>
+</div>
+</section>
+<!-- Section 2: Soberanía en la Menopausia -->
+<section class="py-32 px-margin-desktop max-w-container-max mx-auto">
+<div class="grid md:grid-cols-2 gap-20 items-center">
+<div>
+<h2 class="text-display-lg font-display-lg text-terracotta-deep mb-8">La soberanía del climaterio</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant mb-6">
+                        Reclamar el cuerpo y los procesos naturales es un acto de resistencia y empoderamiento. En Almatriz, entendemos el climaterio no como un fin, sino como un portal hacia una nueva forma de habitar el mundo.
+                    </p>
+<p class="text-body-lg font-body-lg text-on-surface-variant">
+                        Esta formación te brinda las herramientas para guiar a otras mujeres en este tránsito, asegurando que cada paso se dé con información veraz, respeto y una profunda conexión con la red de apoyo mutuo.
+                    </p>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-terracotta-base/10 rounded-2xl -rotate-2 group-hover:rotate-0 transition-transform duration-500"></div>
+<img alt="Group of women in meditation" class="relative rounded-xl shadow-xl w-full aspect-square object-cover" data-alt="A diverse group of middle-aged women sitting together in a serene, brightly lit circle during a meditation session. Their eyes are closed, faces reflecting tranquility and internal focus. The setting is a minimalist, warm room with natural wood floors and large windows, creating an atmosphere of safety and communal wisdom. The lighting is soft and flattering, highlighting the professional yet empathetic tone of the perinatal care institution." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD_ObBqgCbm1k4YI-WcwcjbIE_Lr90jgWdgsz6HZzDuGKLKHLqimeTH4HWfy40PKGWKjKhBggqAMn6m7Ii5OkB1YCqSqBMHtJ2rDIHc5JuFyW0bQIV79dUYYZUpICLJSqhKCSK9CMzzU9wbXlL-ihgu0_YvFgu4g4h2CSiWz2f69spDRp4d_vwPNuzxhl8p1GoqHc3EN0062b7GTNb32FOZjrLdEoYJ3O_0u-7jhPRD6Syj_7cWxmTBdiUI-Q8ca2MuGQiqbcmNwXs2Q">
+</div>
+</div>
+</section>
+<!-- Section 3: Pilares del Programa -->
+<section class="bg-surface-container-high py-32">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-20">
+<h2 class="text-display-lg font-display-lg text-terracotta-deep">Pilares del Programa</h2>
+<div class="w-24 h-1 bg-terracotta-base mx-auto mt-6"></div>
+</div>
+<div class="grid md:grid-cols-3 gap-gutter">
+<div class="bg-white p-12 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-terracotta-base text-4xl mb-6" data-icon="monitor_heart">monitor_heart</span>
+<h3 class="text-headline-sm font-headline-sm text-terracotta-deep mb-4">Soporte Fisiológico</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Estudio profundo de los cambios hormonales, salud ósea y metabólica desde una perspectiva de salud integral y funcional.</p>
+</div>
+<div class="bg-white p-12 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-terracotta-base text-4xl mb-6" data-icon="psychology">psychology</span>
+<h3 class="text-headline-sm font-headline-sm text-terracotta-deep mb-4">Acompañamiento Emocional</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Herramientas de escucha activa y gestión emocional para navegar los duelos y renacimientos de esta etapa vital.</p>
+</div>
+<div class="bg-white p-12 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-terracotta-base text-4xl mb-6" data-icon="auto_awesome">auto_awesome</span>
+<h3 class="text-headline-sm font-headline-sm text-terracotta-deep mb-4">Sabiduría Ancestral</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Rescate de prácticas tradicionales y rituales que honran la menopausia como el tiempo de la Mujer Sabia.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: ¿A quién va dirigido? -->
+<section class="py-32 px-margin-desktop max-w-container-max mx-auto">
+<div class="grid md:grid-cols-2 gap-20 items-center">
+<div class="order-2 md:order-1">
+<img alt="Community of women smiling together" class="rounded-xl shadow-2xl w-full aspect-[4/3] object-cover" data-alt="A joyous group of women of different ages standing together in a spacious studio, laughing and hugging. They are dressed in comfortable, stylish clothing in earthy tones. The background features warm white walls and soft studio lighting, conveying a strong sense of community, sisterhood, and mutual support. This image perfectly represents the humanized, empowering, and inclusive brand identity of the menopause doula training program." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLFhBqC6QUqyP3lPLvd924znc5bXGxvJqrOtSJ1cpbqdV36KcYA1_HIqbr9_gnXzq8k3U-pICJPfTHOpz5a0GugMnY0sw208matOhO-6MhQUZRLULDA8Sdr6_mbYyTKa3NhBzxRSE22Hrbc8WNqxTYcd_WTgOcYNfvnMR7urjFpFZDhBBvv9GqEUeEE_c4ZCL-a8K03VIkbXs3S35smtf_8M4N7870ETMVT6FW5X3vE8gG3PUSW236k1WmPX2cilQ2BNKxk2wcqOY">
+</div>
+<div class="order-1 md:order-2">
+<h2 class="text-display-lg font-display-lg text-terracotta-deep mb-8">¿A quién va dirigido?</h2>
+<ul class="organic-list space-y-4 text-body-lg font-body-lg text-on-surface-variant">
+<li class="">Profesionales de la salud que buscan una visión humanizada.</li>
+<li class="">Doulas y parteras que desean ampliar su rango de acompañamiento.</li>
+<li class="">Terapeutas y coaches enfocadas en el bienestar femenino.</li>
+<li class="">Mujeres en transición que desean profundizar en su propio proceso.</li>
+<li class="">Activistas por los derechos reproductivos y de salud de las mujeres.</li>
+</ul>
+<button class="mt-12 border-2 border-terracotta-base text-terracotta-base px-8 py-4 rounded-lg font-label-md text-label-md hover:bg-terracotta-base hover:text-white transition-all">
+                        Solicitar Dossier
+                    </button>
+</div>
+</div>
+</section>
+<!-- Section 5: Contenido Curricular (Accordion) -->
+<section class="py-32 bg-surface-container-low"><div class="max-w-container-max mx-auto px-margin-desktop">
+    <div class="grid md:grid-cols-2 gap-12">
+        <!-- Malla Curricular Column -->
+        <div class="flex flex-col items-center">
+            <h3 class="text-headline-sm font-headline-sm text-terracotta-deep mb-6">Malla Curricular</h3>
+            <div class="relative rounded-xl overflow-hidden shadow-xl border border-outline-variant/20 bg-white p-4 w-full group">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7BrCCb_bavHbfs_zuFTJbNItxXtTpk_cVLqnQrgxISakHG8SkUF0abXP96ULw10A4k-AXKPSa_L32T9PE_cnXjbE3JEVjh9_AL7FVT0I7LkGlS3-acnw4uxX8PXR-7O4aAeKlEnzOg99pdFIUPCa3_cIovFCxVORuqTNfA88rHKS-pN4bvMQyhCvNhwMEDA7Lhxyg0T7Mv0SoGBPJy1iYvT--ENy7p4pno-4G7PXaA4iuS0ymBH0TZ9sH_PQgm0a-fLud0yQXhb8" alt="Malla Curricular Umbral" class="w-full h-auto object-contain rounded-lg blur-[8px] transition-all duration-500 group-hover:blur-[4px]" style="image-rendering: crisp-edges;">
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <span class="bg-white/80 backdrop-blur-md px-4 py-2 rounded-full text-terracotta-deep font-label-sm uppercase tracking-widest shadow-sm">Vista Previa</span>
+                </div>
+            </div>
+            <button class="mt-8 bg-terracotta-deep text-white px-8 py-3 rounded-lg font-label-md text-label-md hover:bg-terracotta-base transition-all shadow-md flex items-center gap-2">
+                <span class="material-symbols-outlined">download</span>
+                Descargar Malla
+            </button>
+        </div>
+
+        <!-- Calendario Académico Column -->
+        <div class="flex flex-col items-center">
+            <h3 class="text-headline-sm font-headline-sm text-terracotta-deep mb-6">Calendario Académico</h3>
+            <div class="relative rounded-xl overflow-hidden shadow-xl border border-outline-variant/20 bg-white p-4 w-full group">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlWlJA9qcROVr4HmNZ6Pemlnu1LmuiMFNVd7D5nNZ18VCqUXS-GHUz4vgDpHOI2ZTmJ8kLRloGFGHCg3v7Lc3W8I1oH5LNdGuGC5KIR8RwVk9FWNww3hgu01tYGWAiopSnMwb3rHMrfvm76Xtv53BZ4VOjBydP1JqkMhhPRfW98HIyvU2W_oStuFErnFId0WQGxYng4hISwkd7S_pkEPBG_P0Vlfr7sFmkZ769x0-hzKt5nKTB1-ilK8Wc-CXaPrgJV5x5PlQ3oNc" alt="Calendario Académico Umbral" class="w-full h-auto object-contain rounded-lg blur-[8px] transition-all duration-500 group-hover:blur-[4px]" style="image-rendering: crisp-edges;">
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <span class="bg-white/80 backdrop-blur-md px-4 py-2 rounded-full text-terracotta-deep font-label-sm uppercase tracking-widest shadow-sm">Vista Previa</span>
+                </div>
+            </div>
+            <button class="mt-8 bg-terracotta-deep text-white px-8 py-3 rounded-lg font-label-md text-label-md hover:bg-terracotta-base transition-all shadow-md flex items-center gap-2">
+                <span class="material-symbols-outlined">calendar_month</span>
+                Descargar Calendario
+            </button>
+        </div>
+    </div>
+</div></section>
+<!-- Section 6: Quote Section -->
+<section class="py-32 bg-white">
+  <div class="max-w-container-max mx-auto px-margin-desktop">
+    <div class="grid md:grid-cols-2 gap-20 items-center">
+      <div>
+        <h2 class="text-display-lg font-display-lg text-terracotta-deep mb-8">Modalidad</h2>
+        <p class="text-body-lg font-body-lg text-on-surface-variant mb-12">
+          Nuestra formación está diseñada para integrarse a tu vida, combinando la profundidad del encuentro presencial con la flexibilidad del aprendizaje online.
+        </p>
+        <div class="grid grid-cols-2 gap-8">
+          <div class="flex flex-col gap-2">
+            <span class="material-symbols-outlined text-terracotta-deep text-3xl">calendar_today</span>
+            <span class="font-label-sm text-terracotta-deep uppercase tracking-widest">Inicio</span>
+            <span class="font-headline-sm text-on-surface">Septiembre 2026</span>
+          </div>
+          <div class="flex flex-col gap-2">
+            <span class="material-symbols-outlined text-terracotta-deep text-3xl">schedule</span>
+            <span class="font-label-sm text-terracotta-deep uppercase tracking-widest">Duración</span>
+            <span class="font-headline-sm text-on-surface">9 meses</span>
+          </div>
+          <div class="flex flex-col gap-2">
+            <span class="material-symbols-outlined text-terracotta-deep text-3xl">history</span>
+            <span class="font-label-sm text-terracotta-deep uppercase tracking-widest">Carga Horaria</span>
+            <span class="font-headline-sm text-on-surface">110 horas</span>
+          </div>
+          <div class="flex flex-col gap-2">
+            <span class="material-symbols-outlined text-terracotta-deep text-3xl">location_on</span>
+            <span class="font-label-sm text-terracotta-deep uppercase tracking-widest">Formato</span>
+            <span class="font-headline-sm text-on-surface">100% online</span>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvaKobmEHXEzzasn3ETFRwoAMyRTrhQdL19nz4_q2dLEMVsHTmcuiaj2SNGypeHzge0mn2BfFkL2_pCyzaMNZ8qzVrCKOQZZBKy83amkiSUXWgZEHpqzKGr8YgIKfI4ILJR9Nd8XTAIwd4h5cMuXassTIiMk22zBCbsrM-xZhw6F2uAO9WlN3EQumxxaW8JBCzpegEk723cJ6fQd-PnOIGO0_lGavfc14AanQ-GvLeXo85wdsFGKTEgrqMfSJG-ft7CA-70iNyJJatgA" alt="Modalidades" class="w-full h-full object-cover">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Section 7: Final CTA -->
+<section class="py-32 bg-surface-container-low">
+  <div class="max-w-container-max mx-auto px-margin-desktop">
+    <div class="text-center mb-20">
+      <h2 class="text-display-lg font-display-lg text-terracotta-deep mb-4">Valores de la formación</h2>
+      <p class="text-headline-sm font-headline-sm text-on-surface-variant">Valor de la matrícula: 150.000 CLP</p>
+      <p class="text-label-sm font-label-sm text-on-surface-variant mt-2 italic">*Doulas egresadas de la formación perinatal Almatriz no pagan matrícula*</p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Primera Pre-Venta -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-lg flex flex-col">
+        <div class="bg-[#c68e4e] p-6 text-center text-white">
+          <h3 class="font-bold uppercase tracking-widest text-label-md">Primera Pre-Venta</h3>
+          <p class="text-label-sm opacity-90">30 de Junio al 1ro de Agosto</p>
+        </div>
+        <div class="p-8 flex-grow flex flex-col items-center justify-center text-center">
+          <p class="text-headline-md font-display-lg text-terracotta-deep whitespace-nowrap">$500.000 CLP</p>
+          <p class="text-headline-sm text-on-surface-variant mt-2">+ Matrícula</p>
+          <p class="text-label-sm text-on-surface-variant mt-4 opacity-70">*3 cuotas precio contado con TC<br>consultar por otros medios de pago</p>
+          <div class="grid grid-cols-2 gap-4 mt-8 w-full">
+            <div class="border border-outline-variant/30 rounded-xl p-3">
+              <p class="text-label-sm font-bold text-terracotta-base">5 cuotas</p>
+              <p class="text-label-md font-bold">$110.000 CLP</p>
+            </div>
+            <div class="border border-outline-variant/30 rounded-xl p-3">
+              <p class="text-label-sm font-bold text-terracotta-base">8 cuotas</p>
+              <p class="text-label-md font-bold">$70.000 CLP</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Segunda Pre-Venta -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-lg flex flex-col">
+        <div class="bg-terracotta-base p-6 text-center text-white">
+          <h3 class="font-bold uppercase tracking-widest text-label-md">Segunda Pre-Venta</h3>
+          <p class="text-label-sm opacity-90">2 de Agosto al 31 de Agosto</p>
+        </div>
+        <div class="p-8 flex-grow flex flex-col items-center justify-center text-center">
+          <p class="text-headline-md font-display-lg text-terracotta-deep whitespace-nowrap">$600.000 CLP</p>
+          <p class="text-headline-sm text-on-surface-variant mt-2">+ Matrícula</p>
+          <p class="text-label-sm text-on-surface-variant mt-4 opacity-70">*3 cuotas precio contado con TC<br>consultar por otros medios de pago</p>
+          <div class="grid grid-cols-2 gap-4 mt-8 w-full">
+            <div class="border border-outline-variant/30 rounded-xl p-3">
+              <p class="text-label-sm font-bold text-terracotta-base">5 cuotas</p>
+              <p class="text-label-md font-bold">$130.000 CLP</p>
+            </div>
+            <div class="border border-outline-variant/30 rounded-xl p-3">
+              <p class="text-label-sm font-bold text-terracotta-base">8 cuotas</p>
+              <p class="text-label-md font-bold">$83.000 CLP</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Venta General -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-lg flex flex-col">
+        <div class="bg-terracotta-deep p-6 text-center text-white">
+          <h3 class="font-bold uppercase tracking-widest text-label-md">Venta General</h3>
+          <p class="text-label-sm opacity-90">1 de septiembre en adelante</p>
+        </div>
+        <div class="p-8 flex-grow flex flex-col items-center justify-center text-center">
+          <p class="text-headline-md font-display-lg text-terracotta-deep whitespace-nowrap">$700.000 CLP</p>
+          <p class="text-headline-sm text-on-surface-variant mt-2">+ Matrícula</p>
+          <p class="text-label-sm text-on-surface-variant mt-4 opacity-70">*3 cuotas precio contado con TC<br>consultar por otros medios de pago</p>
+          <div class="grid grid-cols-2 gap-4 mt-8 w-full">
+            <div class="border border-outline-variant/30 rounded-xl p-3">
+              <p class="text-label-sm font-bold text-terracotta-base">5 cuotas</p>
+              <p class="text-label-md font-bold">$150.000 CLP</p>
+            </div>
+            <div class="border border-outline-variant/30 rounded-xl p-3">
+              <p class="text-label-sm font-bold text-terracotta-base">8 cuotas</p>
+              <p class="text-label-md font-bold">$95.000 CLP</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><section class="py-32 text-center bg-surface-container-highest">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<h2 class="text-display-lg font-display-lg text-terracotta-deep mb-8">¿Lista para transformar el camino?</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant mb-12 max-w-2xl mx-auto">
+                    Únete a la próxima generación de acompañantes que están cambiando la forma en que el mundo ve y vive el climaterio. Las inscripciones están abiertas.
+                </p>
+<div class="flex flex-col md:flex-row justify-center gap-6">
+<button class="bg-terracotta-base text-white px-12 py-5 rounded-lg font-label-md text-label-md hover:bg-terracotta-deep transition-all shadow-xl hover:-translate-y-1">
+                        Inscribirse Ahora
+                    </button>
+
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-inverse-surface full-width py-12 px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter w-full max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1">
+<span class="text-headline-sm font-headline-sm text-terracotta-deep mb-6 block">Almatriz</span>
+<p class="text-body-md font-body-md text-on-surface-variant">© 2026 Almatriz. Sabiduría de mujeres para mujeres.</p>
+</div>
+<div>
+<h4 class="text-label-sm font-label-sm text-terracotta-deep mb-4 uppercase tracking-widest">Legal</h4>
+<div class="flex flex-col gap-3">
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-terracotta-base transition-colors duration-200" href="#">Privacidad</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-terracotta-base transition-colors duration-200" href="#">Términos</a>
+</div>
+</div>
+<div>
+<h4 class="text-label-sm font-label-sm text-terracotta-deep mb-4 uppercase tracking-widest">Soporte</h4>
+<div class="flex flex-col gap-3">
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-terracotta-base transition-colors duration-200" href="#">Preguntas Frecuentes</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-terracotta-base transition-colors duration-200" href="#">Trabaja con nosotros</a>
+</div>
+</div>
+<div>
+<h4 class="text-label-sm font-label-sm text-terracotta-deep mb-4 uppercase tracking-widest">Newsletter</h4>
+<div class="flex gap-2">
+<input class="bg-surface-container-low border-none rounded-lg px-4 py-2 w-full text-label-sm" placeholder="Tu email" type="email">
+<button class="bg-terracotta-base text-white p-2 rounded-lg material-symbols-outlined" data-icon="send">send</button>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        function toggleAccordion(id) {
+            const content = document.getElementById(`content-${id}`);
+            const icon = document.getElementById(`icon-${id}`);
+            const allContents = document.querySelectorAll('[id^="content-"]');
+            const allIcons = document.querySelectorAll('[id^="icon-"]');
+
+            allContents.forEach((c, idx) => {
+                if (c.id !== `content-${id}`) {
+                    c.style.maxHeight = '0px';
+                    allIcons[idx].style.transform = 'rotate(0deg)';
+                }
+            });
+
+            if (content.style.maxHeight === '0px' || content.style.maxHeight === '') {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.style.maxHeight = '0px';
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Initialize accordion heights
+        document.addEventListener('DOMContentLoaded', () => {
+            const allContents = document.querySelectorAll('[id^="content-"]');
+            allContents.forEach(c => c.style.maxHeight = '0px');
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

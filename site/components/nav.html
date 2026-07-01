@@ -1,0 +1,48 @@
+<!-- Shared Navigation -->
+<!-- Copy this block into every page, then adjust the active link class on the current page. -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 shadow-sm transition-all duration-300">
+  <nav class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUUrTUnjWVyYamLPm4bW6RNH9UyBYA9L2eNvSNYGjHjKgRq1jxcfTIuoWaWhLJjzbdLo5n2akZjmOJ5LQNcxMRT0idRduT4pBlnuaOdwWhpKiSo-jtc9za-yDVASW70s9VKwsfTgqyEmj5L0F_GdXfB6ssocidzKc1azAlNRfBSKci2tv_5Z3ZFDI_tgXIQFtKEeQ8FdBvUpgJH7TtLOa3D42iEhK7Ae3A8U972t8AXDyot3jhX-bZG1PagnkDp4QxMIRcq3bkRmA" alt="Almatriz Logo" class="h-8 md:h-10 w-auto object-contain">
+    </a>
+
+    <!-- Desktop Nav -->
+    <div class="hidden md:flex items-center gap-8 font-label-md text-label-md">
+      <a href="index.html" class="text-on-surface-variant hover:text-terracotta-base transition-colors">Inicio</a>
+
+      <div class="relative group">
+        <button class="flex items-center gap-1 text-on-surface-variant hover:text-terracotta-base transition-colors">
+          Formación
+          <span class="material-symbols-outlined text-[18px]">expand_more</span>
+        </button>
+        <div class="absolute left-0 mt-2 w-64 bg-white rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 overflow-hidden border border-outline-variant/20">
+          <div class="p-2">
+            <a href="formacion-doulas-perinatal.html" class="block p-3 rounded-lg hover:bg-warm-cream/30 transition-colors">
+              <p class="font-bold text-terracotta-deep text-sm">Doula Perinatal</p>
+              <p class="text-on-surface-variant text-xs mt-1">Acompañamiento en la gestación y parto</p>
+            </a>
+            <a href="formacion-doula-menopausia.html" class="block p-3 rounded-lg hover:bg-warm-cream/30 transition-colors">
+              <p class="font-bold text-terracotta-deep text-sm">Doula de Menopausia</p>
+              <p class="text-on-surface-variant text-xs mt-1">Soberanía y sabiduría en el climaterio</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <a href="cursos-especializacion.html" class="text-on-surface-variant hover:text-terracotta-base transition-colors">Cursos de especialización</a>
+      <a href="sobre-nosotras.html" class="text-on-surface-variant hover:text-terracotta-base transition-colors">Sobre nosotras</a>
+      <a href="contacto.html" class="text-on-surface-variant hover:text-terracotta-base transition-colors">Contacto</a>
+    </div>
+
+    <!-- CTA + Mobile menu -->
+    <div class="flex items-center gap-4">
+      <a href="contacto.html" class="hidden sm:inline-block bg-terracotta-base text-white px-6 py-2 rounded-lg font-label-md text-label-md hover:bg-terracotta-deep transition-all active:scale-95 shadow-sm">
+        Inscribirse
+      </a>
+      <button class="md:hidden p-2 text-on-surface-variant" aria-label="Abrir menú">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </nav>
+</header>

@@ -1,0 +1,14 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary / working files
+/tmp/
+/tmp-opencode/
+*.tmp
+*.swp
+*.swo
+*~
